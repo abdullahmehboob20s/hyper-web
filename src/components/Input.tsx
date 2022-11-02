@@ -20,13 +20,11 @@ function Input({ placeholder, value, onChange, name, otherProps }: Props) {
         value={value}
         onChange={onChange}
         name={name}
-        className={`${styles.did_floating_input} fs-14px black font-secondary weight-5`}
+        className={`${styles.did_floating_input} fs-14px black weight-5`}
         type="text"
         placeholder=" "
       />
-      <label
-        className={`${styles.did_floating_label} fs-14px font-secondary weight-5`}
-      >
+      <label className={`${styles.did_floating_label} fs-14px weight-5`}>
         {placeholder}
       </label>
     </div>
