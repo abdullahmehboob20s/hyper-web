@@ -4,7 +4,6 @@ import { HiChevronDoubleUp } from "react-icons/hi";
 import { MdNotInterested } from "react-icons/md";
 import { BsLightningFill, BsBricks } from "react-icons/bs";
 import LinkButton from "components/LinkButton";
-import useMediaQuery from "hooks/useMediaQuery";
 
 function LandingPage() {
   return (

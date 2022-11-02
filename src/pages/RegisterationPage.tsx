@@ -1,5 +1,3 @@
-import Button from "components/LinkButton";
-import Input from "components/Input";
 import useMediaQuery from "hooks/useMediaQuery";
 import Form from "layouts/Form";
 import styles from "scss/pages/RegisterationPage.module.scss";
