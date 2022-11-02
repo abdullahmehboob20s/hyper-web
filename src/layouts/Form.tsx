@@ -2,7 +2,7 @@ import Button from "components/Button";
 import Input from "components/Input";
 import { useState } from "react";
 import styles from "scss/layouts/Form.module.scss";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 interface FormData {
@@ -95,8 +95,6 @@ function Form() {
           title="Submit"
         />
       </div>
-
-      <ToastContainer />
     </form>
   );
 }
