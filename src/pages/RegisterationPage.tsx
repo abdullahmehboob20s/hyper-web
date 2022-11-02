@@ -1,5 +1,6 @@
 import useMediaQuery from "hooks/useMediaQuery";
 import Form from "layouts/Form";
+import { Link } from "react-router-dom";
 import styles from "scss/pages/RegisterationPage.module.scss";
 
 function RegisterationPage() {
@@ -12,19 +13,21 @@ function RegisterationPage() {
     >
       <div className={styles.card}>
         <div className={styles.left}>
-          {isBellow640px ? (
-            <img
-              src="images/logo-variant-1.svg"
-              className={styles.logo}
-              alt=""
-            />
-          ) : (
-            <img
-              src="images/logo-variant-2.svg"
-              className={styles.logo}
-              alt=""
-            />
-          )}
+          <Link to="/">
+            {isBellow640px ? (
+              <img
+                src="images/logo-variant-1.svg"
+                className={styles.logo}
+                alt=""
+              />
+            ) : (
+              <img
+                src="images/logo-variant-2.svg"
+                className={styles.logo}
+                alt=""
+              />
+            )}
+          </Link>
 
           <h1 className="fs-40px weight-7 mb-20px">
             Paper trading competition

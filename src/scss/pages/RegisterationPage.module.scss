@@ -52,7 +52,11 @@
 
 @include u.breakpoint(small) {
   .card {
+    display: block;
     grid-template-columns: 1fr;
+    justify-items: start;
+    flex: 1;
+    background-color: white;
   }
 
   .left {
@@ -67,7 +71,9 @@
 
   .wrapper {
     min-height: 100vh;
-    display: block;
+    display: flex;
     flex-direction: column;
+    align-items: unset;
+    justify-content: unset;
   }
 }

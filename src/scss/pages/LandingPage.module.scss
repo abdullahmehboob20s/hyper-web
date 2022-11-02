@@ -69,6 +69,7 @@
 
   .card {
     flex: 1;
+    padding: u.rem(26) u.rem(20);
   }
 
   .sideBySide {
@@ -78,7 +79,7 @@
 
     .left {
       display: grid;
-      grid-template-columns: 1fr auto;
+      grid-template-columns: 1fr 1fr;
       gap: 1rem;
 
       & > :not(:last-child) {
