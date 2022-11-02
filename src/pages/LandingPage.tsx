@@ -14,7 +14,7 @@ function LandingPage() {
         <img src="images/logo-variant-1.svg" className={styles.logo} alt="" />
         <div data-type="titles">
           <h1 className="weight-8 text weight-7 fs-52px">Trade perpetuals</h1>
-          <p className="font-secondary text fs-20px weight-7 mb-10px">
+          <p className="text fs-20px weight-7 mb-10px">
             with best-in-class liquidity, speed, and price
           </p>
 

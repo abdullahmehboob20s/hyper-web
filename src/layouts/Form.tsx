@@ -65,7 +65,7 @@ function Form() {
         />
       </div>
 
-      <p className="fs-16px weight-4 italic font-secondary mb-30px">
+      <p className="fs-16px weight-4 italic mb-30px">
         Join the{" "}
         <a href="/" className="link-2 underline">
           Hyper Liquid server
