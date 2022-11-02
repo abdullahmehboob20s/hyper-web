@@ -1,0 +1,44 @@
+/* COLORS */
+
+$text: #180b2b;
+$text-2: #180a2b;
+$link: #4878fe;
+$link-2: #4878fe;
+
+.black {
+  color: #000000;
+}
+.white {
+  color: #fafcff;
+}
+
+// TEXT
+.text {
+  color: $text;
+}
+.bg-text {
+  background-color: $text;
+}
+
+.text-2 {
+  color: $text-2;
+}
+.bg-text-2 {
+  background-color: $text-2;
+}
+
+// LINK
+.link {
+  color: $link;
+}
+.bg-link {
+  background-color: $link;
+}
+
+// LINK 2
+.link-2 {
+  color: $link-2;
+}
+.bg-link-2 {
+  background-color: $link-2;
+}

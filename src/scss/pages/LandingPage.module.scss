@@ -1,0 +1,85 @@
+@use "../utils" as u;
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 100%;
+  max-width: u.rem(220);
+  margin-bottom: u.rem(40);
+}
+
+.card {
+  width: 100%;
+  max-width: u.rem(648);
+  background-color: white;
+  padding: u.rem(26) u.rem(26);
+  padding-bottom: u.rem(42);
+}
+
+.wrapper [data-type="titles"] {
+  margin-bottom: u.rem(40);
+}
+
+.sideBySide {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+
+  .left {
+    & > :not(:last-child) {
+      margin-bottom: u.rem(18);
+    }
+  }
+}
+
+@include u.breakpoint(xLarge) {
+  .logo {
+    max-width: u.rem(200);
+    margin-bottom: u.rem(20);
+  }
+}
+
+@include u.breakpoint(large) {
+  .logo {
+    margin-bottom: u.rem(20);
+  }
+}
+
+@include u.breakpoint(small) {
+  .wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    flex: 1;
+  }
+
+  .sideBySide {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: u.rem(42);
+
+    .left {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 1rem;
+
+      & > :not(:last-child) {
+        margin-bottom: u.rem(0);
+      }
+    }
+  }
+
+  .registerButtonWrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+  }
+}

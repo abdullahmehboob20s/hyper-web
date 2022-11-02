@@ -1,0 +1,60 @@
+@forward "globals";
+@use "./utils" as u;
+
+.landing-page {
+  @include u.breakpoint(xLarge) {
+    .fs-52px {
+      font-size: u.rem(38);
+    }
+    .fs-20px {
+      font-size: u.rem(18);
+    }
+    .fs-20px.dont-change-font-size {
+      font-size: u.rem(20);
+    }
+  }
+
+  @include u.breakpoint(large) {
+    .fs-52px {
+      font-size: u.rem(36);
+    }
+    .fs-20px {
+      font-size: u.rem(14);
+    }
+    .fs-20px.dont-change-font-size {
+      font-size: u.rem(20);
+    }
+    .fs-16px {
+      font-size: u.rem(14);
+    }
+  }
+
+  @include u.breakpoint(small) {
+    .fs-52px {
+      font-size: u.rem(30);
+    }
+  }
+}
+
+.registeration-page {
+  @include u.breakpoint(xLarge) {
+    .fs-40px {
+      font-size: u.rem(30);
+    }
+    .fs-16px {
+      font-size: u.rem(14);
+    }
+  }
+
+  @include u.breakpoint(medium) {
+    .fs-40px {
+      font-size: u.rem(26);
+    }
+
+    .form-inputs {
+      .fs-14px {
+        font-size: u.rem(12);
+      }
+    }
+  }
+}

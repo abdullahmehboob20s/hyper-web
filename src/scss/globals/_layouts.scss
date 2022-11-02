@@ -1,0 +1,28 @@
+@use "../utils" as u;
+
+.page-container {
+  width: 100%;
+  padding: u.rem(10);
+}
+
+.block {
+  display: block;
+}
+.inline-block {
+  display: inline-block;
+}
+.w-fit-content {
+  width: fit-content;
+}
+.w-full {
+  width: 100%;
+}
+.flex {
+  display: flex;
+}
+.flex.align-center {
+  align-items: center;
+}
+.flex.justify-end {
+  justify-content: flex-end;
+}

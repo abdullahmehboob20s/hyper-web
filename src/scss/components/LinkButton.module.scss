@@ -1,0 +1,11 @@
+@use "../utils" as u;
+
+.button {
+  padding: u.rem(4) u.rem(12);
+  border-radius: 0.6rem;
+
+  &:disabled {
+    opacity: 0.6;
+    pointer-events: none;
+  }
+}

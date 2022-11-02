@@ -1,0 +1,22 @@
+@use "../utils" as u;
+@use "../globals/colors" as colors;
+
+.card {
+  display: flex;
+  align-items: center;
+
+  & > :not(:last-child) {
+    margin-right: u.rem(8);
+  }
+}
+
+.icon {
+  width: u.rem(25);
+  height: u.rem(25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: u.rem(25);
+  color: colors.$text;
+  background-color: rgb(243, 243, 243);
+}

@@ -1,0 +1,65 @@
+@use "../utils" as u;
+@use "../globals/colors" as colors;
+
+.floatingLable {
+  position: relative;
+}
+.did_floating_label {
+  color: gray;
+  position: absolute;
+  pointer-events: none;
+  left: u.rem(15);
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 0.6rem;
+  background: #fff;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+.did_floating_input,
+.did-floating-select {
+  height: u.rem(40);
+
+  display: block;
+  width: 100%;
+  padding: 0 u.rem(20);
+  background: #fff;
+  border: u.rem(1) solid rgba(128, 128, 128, 0.74);
+  border-radius: u.rem(4);
+  box-sizing: border-box;
+
+  &:focus {
+    outline: none;
+    border: u.rem(1) solid colors.$link-2;
+    ~ .did_floating_label {
+      top: -2%;
+      font-size: u.rem(10);
+    }
+  }
+}
+
+.did_floating_input:not(:placeholder-shown) ~ .did_floating_label {
+  top: -2%;
+  font-size: u.rem(10);
+}
+.did-floating-select:not([value=""]):valid ~ .did_floating_label {
+  top: -2%;
+  font-size: u.rem(10);
+}
+.did-floating-select[value=""]:focus ~ .did_floating_label {
+  top: -2%;
+  font-size: u.rem(10);
+}
+
+@include u.breakpoint(medium) {
+  .did_floating_input,
+  .did-floating-select {
+    height: u.rem(34);
+    padding: 0 u.rem(18);
+  }
+
+  .did_floating_label {
+    left: u.rem(10);
+  }
+}

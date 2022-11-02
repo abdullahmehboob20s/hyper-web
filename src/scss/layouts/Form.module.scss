@@ -1,0 +1,10 @@
+.inputs {
+  & > :not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+
+.formSubmit {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,68 @@
+@use "../utils" as u;
+@use "../globals/colors" as colors;
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  height: 482px;
+  max-width: u.rem(736);
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.left,
+.right {
+  padding: u.rem(26);
+}
+
+.left {
+  background-color: colors.$text-2;
+  color: white;
+}
+.right {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: u.rem(36);
+  padding-bottom: u.rem(36);
+}
+
+.logo {
+  width: 100%;
+  max-width: u.rem(220);
+  margin-bottom: u.rem(34);
+}
+
+@include u.breakpoint(xLarge) {
+  .card {
+    height: auto;
+  }
+
+  .logo {
+    max-width: u.rem(180);
+    margin-bottom: u.rem(28);
+  }
+}
+
+@include u.breakpoint(small) {
+  .card {
+    grid-template-columns: 1fr;
+  }
+
+  .left {
+    background-color: white;
+    color: colors.$text;
+  }
+
+  .right {
+    padding-top: u.rem(20);
+    padding-bottom: u.rem(34);
+  }
+}

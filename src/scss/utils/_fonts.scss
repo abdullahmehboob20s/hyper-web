@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@font-face {
+  font-family: "NeogroteskPro";
+  src: url(../../../public/fonts/Neogrotesk/NeogroteskPro-Light.ttf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: "NeogroteskPro";
+  src: url(../../../public/fonts/Neogrotesk/NeogroteskPro-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "NeogroteskPro";
+  src: url(../../../public/fonts/Neogrotesk/NeogroteskPro-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "NeogroteskPro";
+  src: url(../../../public/fonts/Neogrotesk/NeogroteskPro-Black.ttf);
+  font-weight: 900;
+}
+
+$font-main: "NeogroteskPro", sans-serif;
+$font-secondary: "Inter", sans-serif;
