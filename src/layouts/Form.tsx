@@ -4,21 +4,13 @@ import { useState } from "react";
 import styles from "scss/layouts/Form.module.scss";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Msg from "components/Msg";
 
 interface FormData {
   ethAddress: string;
   telegram: string;
   discord: string;
 }
-
-const Msg = ({ closeToast, toastProps }: any) => {
-  return (
-    <p className="fs-12px font-secondary">
-      you’re registered. Join the Hyper Liquid Discord server and get ready to
-      compete!
-    </p>
-  );
-};
 
 function Form() {
   const [formData, setFormData] = useState<FormData>({
@@ -62,7 +54,7 @@ function Form() {
           name="telegram"
           onChange={onChangeHandler}
           value={formData.telegram}
-          placeholder="Telegram"
+          placeholder="Telegram *"
         />
         <Input
           otherProps={{ required: true }}

@@ -4,6 +4,7 @@ import { HiChevronDoubleUp } from "react-icons/hi";
 import { MdNotInterested } from "react-icons/md";
 import { BsLightningFill, BsBricks } from "react-icons/bs";
 import LinkButton from "components/LinkButton";
+import useMediaQuery from "hooks/useMediaQuery";
 
 function LandingPage() {
   return (
@@ -17,10 +18,13 @@ function LandingPage() {
           <p className="font-secondary text fs-20px weight-7 mb-10px">
             with best-in-class liquidity, speed, and price
           </p>
-          <LinkButton
-            LinkProps={{ to: "/register", target: "_self" }}
-            title="Launch exchange"
-          />
+
+          <div className={styles.launchExchangeButtonWrapper}>
+            <LinkButton
+              LinkProps={{ to: "/register", target: "_self" }}
+              title="Launch exchange"
+            />
+          </div>
         </div>
 
         <div className={styles.sideBySide}>
@@ -46,12 +50,11 @@ function LandingPage() {
             <h4 className="fs-20px text weight-7 mb-10px dont-change-font-size">
               Paper trading competition
             </h4>
-            <p
-              className="fs-16px text lh-1_4 mb-20px"
-              style={{ maxWidth: "16rem" }}
-            >
-              Win prizes from a $7,500 pool. Starting Nov 8 at 18:00 UTC. Learn
-              more{" "}
+
+            <p className="fs-16px text lh-1_4 mb-20px lh-1_8">
+              Win prizes from a $7,500 pool. <br /> Starting Nov 8 at 18:00 UTC.{" "}
+              <br />
+              Learn more {">"}{" "}
               <a href="here" className="weight-9 underline link-2">
                 here
               </a>

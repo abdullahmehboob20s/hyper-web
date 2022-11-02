@@ -32,16 +32,16 @@ function RegisterationPage() {
             Paper trading competition
           </h1>
 
-          <p className="fs-16px weight-3 mb-20px">
+          <p className="fs-16px mb-20px">
             Trade mock USDC at no cost and win prizes from a $7,500 pool.
           </p>
 
           <div className="mb-20px">
-            <p className="fs-16px weight-3">Starting Nov 9 at 18:00 UTC. </p>
-            <p className="fs-16px weight-3">Ending Nov 16 at 18:00 UTC. </p>
+            <p className="fs-16px">Starting Nov 9 at 18:00 UTC. </p>
+            <p className="fs-16px">Ending Nov 16 at 18:00 UTC. </p>
           </div>
 
-          <p className="fs-16px weight-3">
+          <p className="fs-16px">
             Learn more{" "}
             <a href="here" className="link-2 weight-7 underline">
               here
